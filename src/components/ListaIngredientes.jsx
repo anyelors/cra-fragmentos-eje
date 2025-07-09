@@ -1,3 +1,4 @@
+import React from "react";
 import Ingrediente from "./Ingredientes";
 
 const ingredientes = [
@@ -11,9 +12,9 @@ function ListaIngredientes() {
   return (
     <section>
       {ingredientes.map((ing) => (
-        <div key={ing.id} className="lista">
+        <React.Fragment key={ing.id} className="lista">
           <Ingrediente nombre={ing.nombre +':'+tab} cantidad={ing.cantidad} />
-        </div>
+        </React.Fragment>
       ))}
     </section>
   );

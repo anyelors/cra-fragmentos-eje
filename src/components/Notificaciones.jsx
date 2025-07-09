@@ -11,7 +11,7 @@ function Notificacion({ texto, tipo }) {
   return (
     <>
       <h4 style={{ color: color || 'black' }}>
-        {texto}
+        <b>{texto}</b>
       </h4>
     </>
   );

@@ -1,3 +1,4 @@
+import React from "react";
 import Notificacion from "./Notificaciones";
 
 const notificacion = [
@@ -10,13 +11,13 @@ const notificacion = [
 
 function ListaNotificaciones() {
   return (
-    <section>
+    <React.Fragment>
       {notificacion.map((n) => (
         <div key={n.id} className="lista">
           <Notificacion texto={n.texto} tipo={n.tipo} />
         </div>
       ))}
-    </section>
+    </React.Fragment>
   );
 }
 

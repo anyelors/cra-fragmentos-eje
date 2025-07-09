@@ -10,13 +10,13 @@ const tab = '\u00A0';
 
 function ListaFrases() {
   return (
-    <section>
+    <div>
       {frases.map((ing) => (
         <div key={ing.id} className="lista">
           <Frases frase={ing.frase + tab} autor={ing.autor} />
         </div>
       ))}
-    </section>
+    </div>
   );
 }
 
